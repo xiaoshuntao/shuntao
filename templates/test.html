@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script type="text/javascript" src="https://mat1.gtimg.com/qqcdn/bj2022/scripts/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style type="text/css">
+    {#隐藏左右滚动条#}
+  html,body{height:100%;overflow-x:hidden;}
+  ul,li{list-style-type:none;}
+	.list_ul li{text-align:center;height:30px;line-height:30px;border-bottom:0.5px solid #000;}
+	.list_ul li:hover{background:#ccc;cursor:pointer}
+  .nav{width:100%;padding:0 50px;line-height:80px;font-family:"楷体";margin-top:30px;border-bottom:1px solid #000;}
+  .nav span{color:red;font-size:60px;font-weight:bold;}
+  .main_box{width:100%;min-width:1200px;height:86%;}
+  .box_lett{width:20%;border-right:1px solid #000;padding-right:1px;height:100%;float:left;overflow-y:auto;}
+  .list_fer button{width:100%;height:50px;}
+  .btn_sub button{margin-left: 100px;margin-top:50px;}
+  .iphones,.Androids{display:none;}
+ pre {outline: 1px solid #ccc; padding: 5px; margin: 5px; }
+</style>
+<body>
+<div class="nav">
+    <span style="text-align: center;display:block;">版本总结</span>
+</div>
+<div class="main_box">
+    <div class="box_lett">
+    <button id = "iphones" type="button" style="width:100%;height:40px">腾讯体育iPhone</button>
+    <button id = "Androids" type="button" style="width:100%;height:40px">腾讯体育Android</button>
+    <button id = "Webs"type="button" style="width:100%;height:40px">腾讯体育Web</button>
+        <button id = "Servers" type="button" style="width:100%;height:40px">腾讯体育Server</button>
+    </div>
+   <table width="900" border="1">
+    <tr>
+        <td>版本</td>
+        <td>查看详情</td>
+    </tr>
+    <tr class="iphones">
+      <td>主播端 2.0.7版 - 6.5.50</td>
+       <td>主播端 2.0.7版 - 6.5.40</td>
+    </tr>
+
+       <tr class="Androids">
+      <td>222</td>
+       <td>主播端 2.0.7版 - 6.5.40</td>
+    </tr>
+
+</table>
+
+</div>
+
+
+</body>
+<script>
+    $('#iphones').click(function(){
+        $('.iphones').show();
+        $('.Androids').hide();
+
+
+    });
+        $('#Androids').click(function(){
+        $('.iphones').hide();
+        $('.Androids').show();
+
+
+    });
+</script>
+</html>
